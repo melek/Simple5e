@@ -1,4 +1,5 @@
 5/14/2020 - 2.1
+
 Note: A bug in MapTool prevents non-GMs from using 'Tweak Token' on newly created tokens. To workaround this, the player can double-click the token, hit 'OK' (no need to alter any settings), and then run 'Tweak Token' as normal.
 
 * Bugfix/Improvement: The 'Invisibility' campaign macro has been refactored to let the GM secretly hide tokens without alerting players. The macro code should also be more clear and similar to other state macros ([#13](https://github.com/melek/Simple5e/issues/13)).
