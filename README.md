@@ -22,7 +22,7 @@ Have fun!
 - [Merudo's 5e Spell Library](https://github.com/Merudo/spell-library/releases/latest). This addon requires MapTool 1.6+, and will give you instant access to nearly every 5e spell. It is HIGHLY recommended!
 
 ### Download Version 1.3
-This version is even simpler and easier to havck than 2.0, but rougher around the edges.
+This version is even simpler and easier to hack around on than 2.0, but rougher around the edges.
 - [Version 1.3 Campaign File](https://github.com/melek/Simple5e/raw/master/Version%201.3/Meleks%20Simple%205e%20v1.3.cmpgn)
 - [Version 1.3 Parts](Version%201.3/)
 
