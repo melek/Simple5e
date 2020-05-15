@@ -6,7 +6,7 @@ A hopefully simple-to-use first framework for playing 5th edition Dungeons and D
 ## Download Version 2
 This is a campaign file which can be opened in [MapTool](https://github.com/RPTools/maptool/releases/latest). Simple5e was built for MapTool 1.5.14 or greater.
 - [Download Newest Version](https://github.com/melek/Simple5e/releases/latest)
-- [Download Parts Individually](Version%202.0/2.0%20Parts)
+- [Download Parts Individually](Version%202.1/2.1%20Parts)
 
 Detailed Installation Instructions: 
 - Download and install MapTool 1.5.14 or greater: [MapTool Newest Releases](https://github.com/RPTools/maptool/releases/latest)
