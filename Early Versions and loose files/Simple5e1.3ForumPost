@@ -1,0 +1,126 @@
+[size=200]Welcome to Melek's Simple 5e[/size]
+
+Starting out with Maptool, I found the 5e frameworks were so complicated that I couldn't understand how they worked. Though I understand them now (and appreciate how much work has gone into them), I still maintain my down n' dirty, basic 5e framework for others who may not want to use JSON, BoT, Library Tokens, and other advanced macros and features right off the bat (or at all).
+
+I've included a few more complex macros to showcase some possibilities, and added some comments and tooltips for newer users to help with understanding some of the more confusing pieces. If it ever seems like feature-creep is making it too difficult to understand, let me know!
+
+I do include one library token in the campaign file, but it is [u]not required[/u] for any of my macros; it is there so you can drop in bobifle's 5e Monter Tokens ([url]https://forums.rptools.net/viewtopic.php?t=27420[/url]). If you don't want to use these, simply delete the Lid:5eAddOn token from the campaign file and never look back.
+
+
+[size=150][b][u]Melek's Simple 5e Framework features[/u][/b][/size]
+My desire providing this framework is to offer a lot of the basic functionality needed to play 5e without every class and race option configured into the game. The result is a lightweight, mostly token-based system that is pretty easy to tinker with as you play. I'm hoping this framework is understandable to newer Maptool users, while helping them dip their toes into intermediate concepts. It works best when used with external/digital character sheets and reference books to track inventory, spells, and other extra information (We use DnD Beyond in my group). 
+
+
+[spoiler="Screenshot of macros"][attachment=4]Meleks Simple 5e v1.3.PNG[/attachment][/spoiler]
+[spoiler="Campaign file (All Campaign and Token Macros and Properties + 5e Monsters library"][attachment=0]Meleks Simple 5e v1.3.cmpgn[/attachment][/spoiler]
+[spoiler="Token Macroset"][attachment=3]Meleks Simple 5e Token Macroset v1.3.mtmacset[/attachment][/spoiler]
+[spoiler="Campaign Macroset"][attachment=2]Meleks Simple 5e Campaign Macroset v1.3.mtmacset[/attachment][/spoiler]
+[spoiler="Campaign Properties"][attachment=1]Meleks Simple 5e Campaign Props v1.3.mtprops[/attachment][/spoiler]
+
+
+Here is a guide to the framework's out-of-the-box features:
+[list][*][b]5e Campaign Properties and States[/b] which do not use JSON or other more complex data structures so they can (mostly) be easily edited directly. The defaults are somewhat enforced through the use of campaign macros when setting up tokens.
+[*][b]Campaign Macros[/b] for managing tokens (including a usable Pronoun system) and set/unset condition modifiers.
+[list][*][u]Configure Token[/u] lets you set a token's name/race/class, hit dice, attributes, proficiency, and AC/HP. This macro directly calls the 'Tweak Token' and 'Validate Token' macros to reduce redundancy and show how to use the [url=https://lmwcs.com/rptools/wiki/macro_(roll_option)]macro roll option[/url].
+[*][u]Tweak Token[/u] lets you quickly adjust oft-changed attributes like AC, HP, Speed, and a few others.
+[*][u]Validate Token[/u] helps reset defaults on tokens to make sure they work with the token macros.
+[*][u]Create Action Macros[/u] let you create either paired macros (for separated attack and damage rolls) or single actions on a wide button. These actions will be sorted and color coded by action type (Action/Bonus Action/Reaction).
+[*] [u]All 5e conditions[/u] plus some extras we use a lot. These are nearly directly from paulstrait's 5e framework, with mostly modified RPG Maker MV images.
+[*][u]NPC Damage, Healing, and Initiative[/u] macros which work on selected NPC tokens and don't look at TempHP or TempMaxHP for increased token compatibility.[/list]
+[*][b]Token Macros[/b] including basic dice roller macros at the top and various default macro sections.
+[list][*][u]Adventuring Macros[/u] include HP and HD Management that includes pretty dynamic short and long rest buttons, a '...' macro to quickly adjust character attributes (it calls 'Tweak Token' directly), and some help text about resting.
+[*][u]Combat Macros[/u] to manage initiative and make default actions such as Dash or Dodge easily available to the player. Attack and Damage macros are separated, and simple one-button actions can be easily created via the appropriate Campaign Macros.
+[*][u]Saving throws and skill check macros[/u] are in two panels color-coded by ability. Death saves only operate if the character has the 'Dead' state or is at 0 hit points.[/list]
+[*][b]Tidy and organized macros[/b] designed to look consistent at the correct frame width (resize to fit). My players really like this, and have customized their tokens to match.
+[/list]
+
+A few other states that are used a lot in my game are in the 'Other States' campaign macros, and a few special macros from my players' tokens are on the additional 3 tokens. Ki and Action Surges are implemented. We generally don't use Maptool to track spells, so you'd have to add that functionality yourself.
+
+[size=150][b][u]Updates[/u][/b][/size]
+
+[b]Current Version: 1.3[/b]
+Released 11/2/2019
+Numerous small bugs from 1.2 have been fixed, and a powerful new "Search and Replace" tool is bundled in the campaign macros that is pre-configured to repair Charisma-based skills on tokens created with v1.2 of the framework. Also, the '...' token now uses the somewhat advanced 'macro' roll option refers directly to the 'Tweak Token' campaign macro to showcase an efficient way to reduce duplication. I've added numerous comments and tooltips to help beginners orient to the framework, MapTool, and macro-writing more quickly and easily.
+
+[spoiler="Full Changelog"]
+[size=85]11/2/2019 - 1.3
+* Fixed Charisma based skill macros which were incorrectly using DexMod.
+* Fixed Investigation skill macro which was incorrectly using the History proficiency.
+* Fixed the sample Unarmed Strike DMG macro to correctly calculate 1 + StrMod damage instead of 1d4 + StrMod.
+* New Feature: Added a new 'Macro Search & Replace' macro for GMs to mass-repair token macros across multiple tokens.
+* New Feature: Updated Fighter properties to include Second Wind macro and added corresponding campaign properties and added Aid spell in 'Other States' to showcase TempMaxHP increases.
+* New Feature: The '...' token macro now directly runs the 'Tweak Token' Campaign macro via a macro roll option, and  'Tweak Token' and 'Validate Token' are similarly called in the 'Configure Token' macro to reduce redundancy. This change means 'Tweak Token' ever only has to be updated in one place, and showcases a way to write one campaign macro and call it from multiple tokens.
+* Tweak: Moved 5e Monster Token library to object layer and added an explanatory GM Note on object-layer tokens.
+* Tweak: Added an explanatory GM Note to Changelog and Acknowledgments to explain the use of their text labels.
+* Improvement: Improved 5e monster compatibility by adding a new token property to help check for converted tokens and hiding unhelpful Passive Insight and Passive Perception stats on mouse-over for unconverted 5e monster tokens.
+* Improvement: Added numerous tooltips and explanatory comments to campaign macros.
+* Improvement: Numerous small fixes and adjustments (mispellings, refactoring, macro positioning & coloring, etc.)
+* Special thanks to Smash the Cookies on Discord for finding the skill and Unarmed Strike macro bugs!
+
+9/23/2019 - 1.2
+*Added properties for enhanced compatibility with bobifle's 5e monster tokens. Some of these token properties show up on the hover-statsheet.
+*Added a 'Convert 5e Monster Token' macro to it possible to edit bobifle's 5e monster tokens with the other standard campaign macros without breaking anything.
+*Updated 'Validate Token' and 'Configure Token' macros to work with converted 5e monster tokens.
+*Made HP so only the owner(s) of the token could see it on the hover-statsheet.
+*Fixed incorrect proficiency calculation.
+*Fixed 'Short Rest' and 'Long Rest' token macros from erroring if ActionSurge or Ki property were empty while MaxActionSurge or MaxKi were set above 0.
+
+8/28/2019 - 1.1
+*I've Fixed bugs in some token macros.
+*There is now a 'Validate Token' campaign macro that will reset many of the default properties if needed. If you are getting errors, try using this macro while selecting your token. This also runs when you use 'configure token'.
+*I've added bobifle's 5e monster library token to the file to make it ready for drop-in monsters. It is too good to pass up, and the implementation is very simple.
+
+8/27/2019 - 1.0
+* Initial Release[/size]
+[/spoiler]
+[spoiler= v1.2 and older have bad bugs! If you are using v1.2 or earlier, read this...]
+[size=150][color=#BF0000]Attention! There are game-affecting bugs in versions 1.2 and older![/color][/size]
+There are 3 known bugs in 1.2 and prior that can affect outcomes of rolls for your players in game:
+1) Charisma based skill macros on v1.2 and older tokens were using DexMod instead of ChaMod. You can manually change 'DexMod' to 'ChaMod' on the four skill macros on all your tokens (Deception, Intimidation, Performance, Persuasion),
+
+I've written up a global macro to quickly update your tokens for this issue here: [url]https://forums.rptools.net/viewtopic.php?f=8&t=28308&p=274512#p274512[/url].
+
+2) 'Investigation' uses the History proficiency by mistake
+
+3) The built-in 'Unarmed DMG' macro uses a 1d4+StrMod instead of 1+StrMod
+
+Sorry to affect your games in this way! I'll fix this in a framework update eventually, but for now you should update your template player token if you download this framework to prevent spreading the error around your game.[/spoiler]
+
+
+[size=150][b][u]Credits![/u][/b][/size]
+I owe a lot of thanks to paulstrait and the other creators responsible for his 5e framework ([url]https://forums.rptools.net/viewtopic.php?f=85&t=25490[/url]), especially for the basic roller and conditions macros. 
+
+Enormous gratitude to bobifle's work on the amazing 5e monster tokens system. It is the backbone of my improvisational GM style.
+
+Additional thanks to Smash the Cookies on Discord, they've helped by reporting multiple bugs that were affecting people's games that nobody noticed before. Oops!
+
+RPGMaker MV is the source of most of my condition images.
+
+[size=150][b][u]Using the framework (for newer users)[/u][/b][/size]
+[list][*]When using the campaign file, use Maptool 1.5.6 or later. You can get 1.5.6 or later here: [url]https://github.com/RPTools/maptool/releases[/url]
+[*]The 'Standard Macros' token is your template for new tokens. Make a copy of this token for each player and NPC you need, select the copy, and click on 'Configure Token' to change the name and attributes of each new token. 
+[*]To add abilities to a token, select it and use the 'Create Action' macros in the Campaign panel, or edit/duplicate/delete existing ability macros directly.
+[*]To change the portrait of your copied tokens, right click on each token, click 'Edit', and select the 'Config' menu. Click the green 'Plus' symbol at the top-right of the token image to change it. (Get TokenTool - [url]https://www.rptools.net/toolbox/token-tool/[/url])
+[*]Make a new map and copy/paste your player tokens to it. 
+[*]When making monsters, setting up one monster, copy-pasting it multiple times, and editing the copies with small adjustments is easier than reconfiguring a bunch of tokens from scratch.
+[*]Basic Action Surge, Second Wind, and Ki tracking are implemented. To disable/enable these, set 'MaxKi', 'MaxActionSurge', and 'MaxSecondWind' on a token's properties to 0 (disabled) or 1+ (enabled). These showcase simple additional systems which can be added on top of the framework's basic functionality.
+[/list]
+
+A slightly more advanced alternative to copying the standard macros token is importing the enclosed macro set onto new tokens. This is nice because you don't have to edit the portrait, and you don't accidentally leave details from a copied token on your new one. 
+
+[size=150][b][u]Issues and warnings[/u][/b][/size]
+There are many downsides to such a simple system. The biggest is that without Library tokens, almost all macros are duplicated on each token. This makes it easy to edit a macro on the fly for a specific character (and if you give them access, easy for them to edit themselves), but means if you find a bug on a standard token macro you'll have to manually fix it on all the other tokens.
+
+Another disadvantage of this approach is that some code is duplicated. For example, the 'Short Rest' macro code is basically repeated in each 'Long Rest' macro. To update this code properly, it would need to be updated in both macros across all your tokens.
+
+A small exception is the '...' token macros and the 'Configure Token' campaign macro, which use the "macro" roll option to call the 'Tweak Token' and 'Validate Token' macros, meaning that you only ever have to edit these called macros on the campaign panel and nowhere else to update them. Review these macros, or better yet read up about 'Library Tokens' if you are interested in implementing similar time-saving design patterns in your version of the framework.
+
+Also, [b]there will be bugs[/b]! I'm sorry, but I made this organically with my group in mind, and while I updated it quite a bit for public consumption I didn't exhaustively test it. If you find a bug, comment below and if there's some interest I'll update this post and re-upload.
+
+[size=150][b][u]Using 5e Monster Tokens[/u][/b][/size]
+I use my framework in conjunction with bobifle's incredible 5e Monster Tokens ([url]https://forums.rptools.net/viewtopic.php?t=27420[/url]). It is an enormous timesaver when GMing on the fly (mostly always for us), at the minor expense of a single library token on a staging map. This is included in my campaign file. I've made numerous features specifically for these tokens to make using them easier, but the framework is still very light even if you skip on using these.
+
+If you are importing my framework into an existing campaign, you'll have to add the library token (included in the download linked from the thread above) to a staging map in your campaign to use these tokens.
+
+[size=150][b][u]Thanks for looking![/u][/b][/size]
+I'm excited to share something back with the community, I've used Maptool every week for over a year now and I love it. If you want to chat/ask me any questions, I'm on the Maptool Discord a lot (my username there is Melek).
