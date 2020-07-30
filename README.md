@@ -20,6 +20,7 @@ Have fun!
 ## Recommended Addons
 - [Bobifle's Drop-in 5e Monsters](https://github.com/bobifle/tokens). All the Basic Rules monsters and monsters from the Tome of Beasts. Optional support for these tokens is built into the Simple5e campaign file.
 - [Merudo's 5e Spell Library](https://github.com/Merudo/spell-library/releases/latest). This addon requires MapTool 1.6+, and will give you instant access to nearly every 5e spell. It is HIGHLY recommended!
+- [Illydth's Spell States](https://github.com/Illydth/issSpellStates). Keep MUCH better track of spell effects and get a bunch of additional, well thought-out utility states and campaign macros. This addon requires MapTool 1.6.1+. Since states are more complex to add to a game than just dropping in a library token, Illydth has both provided instructions and bundled versions of Simple5e with Spell States for you (and even ones with Bag of Tricks!).
 
 ### Download Version 1.3
 This version is even simpler and easier to hack around on than 2.0, but rougher around the edges.
