@@ -6,7 +6,7 @@ A hopefully simple-to-use first framework for playing 5th edition Dungeons and D
 ## Download Version 2
 This is a campaign file which can be opened in [MapTool](https://github.com/RPTools/maptool/releases/latest). Simple5e was built for MapTool 1.5.14 or greater.
 - [Download Newest Version](https://github.com/melek/Simple5e/releases/latest)
-- [Download Parts Individually](Version%202.1/2.1%20Parts)
+- [Download Parts Individually](Version%202.2/Version%202.2%20Parts)
 
 Detailed Installation Instructions: 
 - Download and install MapTool 1.5.14 or greater: [MapTool Newest Releases](https://github.com/RPTools/maptool/releases/latest)
@@ -20,7 +20,7 @@ Have fun!
 ## Recommended Addons
 - [Bobifle's Drop-in 5e Monsters](https://github.com/bobifle/tokens). All the Basic Rules monsters and monsters from the Tome of Beasts. Optional support for these tokens is built into the Simple5e campaign file.
 - [Merudo's 5e Spell Library](https://github.com/Merudo/spell-library/releases/latest). This addon requires MapTool 1.6+, and will give you instant access to nearly every 5e spell. It is HIGHLY recommended!
-- [Illydth's Spell States](https://github.com/Illydth/issSpellStates). Keep MUCH better track of spell effects and get a bunch of additional, well thought-out utility states and campaign macros. This addon requires MapTool 1.6.1+. Since states are more complex to add to a game than just dropping in a library token, Illydth has both provided instructions and bundled versions of Simple5e with Spell States for you (and even ones with Bag of Tricks!).
+- [Illydth's Spell States](https://github.com/Illydth/issSpellStates). Keep MUCH better track of spell effects and get a bunch of additional, well thought-out utility states and campaign macros. This addon requires MapTool 1.6.1+. Simple5e 2.2+ includes all the Campaign Token Properties and States needed so all you need are the tokens and tables. If you want your states to all follow the same aesthetic Illydth has both provided instructions and bundled versions of Simple5e with Spell States for you (and even ones with Bag of Tricks!).
 
 ### Download Version 1.3
 This version is even simpler and easier to hack around on than 2.0, but rougher around the edges.
