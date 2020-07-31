@@ -1,3 +1,23 @@
+7/31/2020 - 2.2
+
+* Bugfix: The 'Concentration' token macro now works when 'Immediately roll saving throw' is unchecked ([#19](https://github.com/melek/Simple5e/issues/19)).
+* Bugfix: The 'Macro Seach and Replace' GM macro has been fixed to eliminate use of double-encoding and better handle Regex sensitive characters ([#14](https://github.com/melek/Simple5e/issues/14)).
+* New Feature: The 'Create Action' button now has a drop down for SRD weapon templates. Using these templates automatically fills out the name, attack and damage attributes according to melee/ranged weapons accounting for finesse, and the damage code. Selecting a weapon template also adds that weapon's information to the attack roll's tooltip. Players can now also add their own tooltip notes during the wizard ([#18](https://github.com/melek/Simple5e/issues/18)).
+* New Feature: A new 'Apply Jack of All Trades' macro is in the GM panel. To use, select the target token and click the GM macro. This feature automatically applies several complex macro edits which are hard to reverse, so use with care ([#20](https://github.com/melek/Simple5e/issues/20)).
+* New Feature: 'Hexed' and 'Marked' campaign states have been added, with corresponding macros in the '4. Other States' Campaign panel group ([#8](https://github.com/melek/Simple5e/issues/8)).
+* New Feature: Added campaign properties and states for compatibility with Illydth's Spell States ([#8](https://github.com/melek/Simple5e/issues/8)) Credit to Rogue Ronin and game-icons.net for the art on these compatibility states.
+* Tweak: Reordered campaign states to make Death and AFK show up over other states ([#8](https://github.com/melek/Simple5e/issues/8)).
+* Tweak: New campaign property 'libAuthor' added to encourage use by plugin developers ([#3](https://github.com/melek/Simple5e/issues/3)).
+* Tweak: Added art credit to Nick Robles directly to the Standard Token GM Notes.
+* Tweak: Added workarond logic to turn off log.info() debugging information from being enabled in 1.7.0, since a bug in that version prevents log.info() calls from working properly when called from the GM panel ([#15](https://github.com/melek/Simple5e/issues/15)). Affected macros:
+  * Configure Token
+  * Tweak Token
+  * Validate Token
+  * Convert 5e Monster Token
+  * Macro Search and Replace
+  * Create Action (GM and Campaign panel versions)
+  * Custom Counters (GM panel Version)
+ 
 5/14/2020 - 2.1
 
 Note: A bug in MapTool prevents non-GMs from using 'Tweak Token' on newly created tokens. To workaround this, the player can double-click the token, hit 'OK' (no need to alter any settings), and then run 'Tweak Token' as normal.
