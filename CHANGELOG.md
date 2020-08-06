@@ -1,3 +1,14 @@
+8/6/2020 - 2.2.1
+
+* Tweak: The 'Validate Token' GM Macro no longer resets PassivePerception and PassiveInsight to preserve custom values for these properties ([#21](https://github.com/melek/Simple5e/issues/21)).
+* Bugfix: The new 'Jack of All Trades' GM macro now updates the selected token's PassivePerception and PassiveInsight skills ([#21](https://github.com/melek/Simple5e/issues/21)).
+* Bugfix: The 'Tweak Token' GM Macro now displays the raw property for AC, Speed, and InitiativeBonus and preserves formula values for these properties. Speed may still be reset to an integer. This will be most noticeable in that the AC formula will be properly preserved on new tokens, rather than being overwritten by a value. AC can still be replaces by a simple integer value if you so wish. It also preserves the updated InitiativeBonus from 'Jack of all Trades' ([#23](https://github.com/melek/Simple5e/issues/23)).
+* Bugfix: The new 'Marked' Campaign macro now has a correct tooltip ([#22](https://github.com/melek/Simple5e/issues/22)). 
+* Bugfix: Standard Token no longer comes with non-default 'Sheet' preferences ([#24](https://github.com/melek/Simple5e/issues/24)).
+* Bugfix: Counters are now readable in the 'Sheet' macro frames when dark mode is enabled ([#25](https://github.com/melek/Simple5e/issues/25)).
+* Meta Bugfix: Updated the changelog on the Simple5e Help token
+* Meta Bugfix: Fixed the 2.x - 2.2.1 Update Token to be more accurate than prior versions
+
 7/31/2020 - 2.2
 
 * Bugfix: The 'Concentration' token macro now works when 'Immediately roll saving throw' is unchecked ([#19](https://github.com/melek/Simple5e/issues/19)).
