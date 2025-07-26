@@ -1,3 +1,6 @@
+7/24/2025 - 2.2.2
+* Bugfix: Several macros had extra ) in them that caused macros to fail in MapTool 1.18.x
+
 8/6/2020 - 2.2.1
 
 * Tweak: The 'Validate Token' GM Macro no longer resets PassivePerception and PassiveInsight to preserve custom values for these properties ([#21](https://github.com/melek/Simple5e/issues/21)).
