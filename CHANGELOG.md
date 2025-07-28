@@ -1,3 +1,12 @@
+7/26/2025 - 2.2.3
+* Bugfix: #40, Theme foreground and background are now saved in the libSettings properties.  New variable being used in CSS macro for background coloring
+* Bugfix: #37, changed macro sizes to be 85px, 100px, or automatic to mitigate wrapping
+* Bugfix: #36, corrected links to go to the proper locations.  
+* Tweak: Included link to Jmr3366 Lib:SpellLibrary and Lib:MonsterMaker  
+
+7/24/2025 - 2.2.2
+* Bugfix: Several macros had extra ) in them that caused macros to fail in MapTool 1.18.x
+
 8/6/2020 - 2.2.1
 
 * Tweak: The 'Validate Token' GM Macro no longer resets PassivePerception and PassiveInsight to preserve custom values for these properties ([#21](https://github.com/melek/Simple5e/issues/21)).
