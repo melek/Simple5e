@@ -1,11 +1,14 @@
-7/26/2025 - 2.2.3
-* Bugfix: #40, Theme foreground and background are now saved in the libSettings properties.  New variable being used in CSS macro for background coloring
-* Bugfix: #37, changed macro sizes to be 85px, 100px, or automatic to mitigate wrapping
-* Bugfix: #36, corrected links to go to the proper locations.  
-* Tweak: Included link to Jmr3366 Lib:SpellLibrary and Lib:MonsterMaker  
+TBD - 2.3.0
 
-7/24/2025 - 2.2.2
-* Bugfix: Several macros had extra ) in them that caused macros to fail in MapTool 1.18.x
+* Bugfix: Removed extra closing parentheses `)` on all tokens and panels which caused macros to fail in MapTool 1.18.x ([#43](https://github.com/melek/Simple5e/issues/43)).
+* Bugfix: Theme foreground and background are now saved in the libSettings properties.  New variable being used in CSS macro for background coloring ([#40](https://github.com/melek/Simple5e/issues/40)).
+* Bugfix: Changed macro sizes to be 85px, 100px, or automatic to mitigate wrapping ([#37](https://github.com/melek/Simple5e/issues/37))
+* Bugfix: #36, corrected links to go to the proper locations ([#36](https://github.com/melek/Simple5e/issues/36)).
+* Tweak: Updated macro buttons with 'default' colors to have 'default' text for theme compatibility
+* Tweak: Included link to Jmr3366 Lib:SpellLibrary and Lib:MonsterMaker
+* Tweak: Reverted 'CHA' macro to work like other saving throw macros
+* Tweak: Removed newlines in Standard Token macro tooltips using `[r: ...]` rolls to improve display
+* Tweak: Reworked all macro button widths to a new, slightly wider standard
 
 8/6/2020 - 2.2.1
 
