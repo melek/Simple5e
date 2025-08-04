@@ -1,4 +1,4 @@
-TBD - 2.3.0
+8/3/2025- 2.3.0
 
 * New Feature: Added a new 'Toggle Macro Width Regime' GM panel macro to provide GMs more theme-compatible macro panel width options on a fresh campaign. This macro should be run on the map with the Standard Token and changes the Standard Token, GM, and Campaign macro widths to fit two width regimes commonly found in MapTool themes. See the macro's command for further details. Not recommended for in-progress campaigns ([#37](https://github.com/melek/Simple5e/issues/37)).
 * New Feature: Rolling a natural 1 on an unarmed attack or created action hit roll will now be obvious in chat ([#27](https://github.com/melek/Simple5e/issues/27)).
@@ -7,10 +7,10 @@ TBD - 2.3.0
 * Tweak: Reverted 'CHA' macro to function like other saving throw macros.
 * Tweak: Included links to Jmr3366 Lib:SpellLibrary and Lib:MonsterMaker.
 * Tweak: Removed newlines in Standard Token macro tooltips using `[r: ...]` rolls to improve display
+* Bugfix: Removed extra closing parentheses `)` on all tokens and panels which caused macros to fail in MapTool 1.18.x. Note this affected every token and panel in the framework. ([#43](https://github.com/melek/Simple5e/issues/43)).
 * Bugfix: Set `scrollreset` to 1 on Lib:Simple5eHelp along with a few text corrections ([#31](https://github.com/melek/Simple5e/issues/31))
 * Bugfix: Corrected `roll0` tooltip error when creating actions without adding proficiency ([#30](https://github.com/melek/Simple5e/issues/30)).
 * Bugfix: Fixed CRITICAL to CRITICALLY in hit rolls un unarmed attacks and created actions ([#26](https://github.com/melek/Simple5e/issues/26)).
-* Bugfix: Removed extra closing parentheses `)` on all tokens and panels which caused macros to fail in MapTool 1.18.x ([#43](https://github.com/melek/Simple5e/issues/43)).
 * Bugfix: Theme foreground and background are now saved in the libSettings properties. New variable being used in CSS macro for background coloring ([#40](https://github.com/melek/Simple5e/issues/40)).
 * Bugfix: Adjustment all macro sizes to better fit updated themes and mitigate wrapping ([#37](https://github.com/melek/Simple5e/issues/37)).
 * Bugfix: Corrected numerous outdated Lib:Simple5eHelp hyperlinks ([#36](https://github.com/melek/Simple5e/issues/36)).
