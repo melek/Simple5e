@@ -6,7 +6,6 @@
 * Tweak: Updated macro buttons with 'default' colors to have 'default' text for theme compatibility ([#40](https://github.com/melek/Simple5e/issues/40)).
 * Tweak: Reverted 'CHA' macro to function like other saving throw macros.
 * Tweak: Included links to Jmr3366 Lib:SpellLibrary and Lib:MonsterMaker.
-* Tweak: Removed newlines in Standard Token macro tooltips using `[r: ...]` rolls to improve display
 * Bugfix: Removed extra closing parentheses `)` on all tokens and panels which caused macros to fail in MapTool 1.18.x. Note this affected every token and panel in the framework. ([#43](https://github.com/melek/Simple5e/issues/43)).
 * Bugfix: Set `scrollreset` to 1 on Lib:Simple5eHelp along with a few text corrections ([#31](https://github.com/melek/Simple5e/issues/31))
 * Bugfix: Corrected `roll0` tooltip error when creating actions without adding proficiency ([#30](https://github.com/melek/Simple5e/issues/30)).
@@ -14,7 +13,7 @@
 * Bugfix: Theme foreground and background are now saved in the libSettings properties. New variable being used in CSS macro for background coloring ([#40](https://github.com/melek/Simple5e/issues/40)).
 * Bugfix: Adjustment all macro sizes to better fit updated themes and mitigate wrapping ([#37](https://github.com/melek/Simple5e/issues/37)).
 * Bugfix: Corrected numerous outdated Lib:Simple5eHelp hyperlinks ([#36](https://github.com/melek/Simple5e/issues/36)).
-* Bugfix: Corrected multi-line calculated tooltips on Standard Token ([#44](https://github.com/melek/Simple5e/issues/44))
+* Bugfix: Corrected multi-line calculated skill and save tooltips on the Standard Token ([#44](https://github.com/melek/Simple5e/issues/44)).
 
 8/6/2020 - 2.2.1
 
