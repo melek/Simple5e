@@ -1,3 +1,7 @@
+TBD - 2.4.0
+
+* [To do] Framework updated to match 2024 PHB rules and terminology.
+
 8/3/2025- 2.3.0
 
 * New Feature: Added a new 'Toggle Macro Width Regime' GM panel macro to provide GMs more theme-compatible macro panel width options on a fresh campaign. This macro should be run on the map with the Standard Token and changes the Standard Token, GM, and Campaign macro widths to fit two width regimes commonly found in MapTool themes. See the macro's command for further details. Not recommended for in-progress campaigns ([#37](https://github.com/melek/Simple5e/issues/37)).
